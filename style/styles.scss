@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root{
-    --primary-headerBg-cl: #5e4e4ed2;
+    --primary-headerBg-cl: #5e4e4e;
     --primaryCl: #161616;
     --secondaryCl: rgb(255, 255, 255);
     --title-cl: linear-gradient(to right, rgb(238, 255, 0), green);
@@ -32,9 +32,6 @@
 
     --navbar-icon-cl:rgb(255, 255, 255);
 }
-html{
-    width: 100%;
-}
 *{
     margin: 0;
     padding: 0;
@@ -57,31 +54,7 @@ h1{
 span{
     color: var(--highlight);
 }
-#loader{
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#loader > img{
-    width: 400px;
-}
-#loader.hidden{
-    animation: fadeOut 4s;
-    animation-fill-mode: forwards;
-}
-@keyframes fadeOut{
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
-}
+
 // scroll
 .holder{
     overflow: hidden;
@@ -92,7 +65,7 @@ span{
     position: fixed;
     top: 0;
     height: 90px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     background: var(--primary-headerBg-cl);
@@ -101,7 +74,6 @@ span{
 
     .header{
         width: 100%;
-        max-width: 1170px;
         margin: 2em;
         display: flex;
         align-items: center;
@@ -216,6 +188,8 @@ span{
     position: relative;
 }
 .container{
+    padding-top: 200px;
+    width: 100%;
     position: relative;
     height: 100vh;
     background-image: url('/images/mainimg.jpg');
@@ -227,27 +201,28 @@ span{
     justify-content: center;         
     
     #landing{
-        position: absolute;
         top: 50%;
-        width: 600px;
+        width: 100%;
         text-align: center;
+        justify-content: center;
         margin: 0;
-        transform: translateY(-50);
+        transform: translateY(-50%, -50%);
         h2{
-            font-size: 2.7em;
+            font-size: 1.9em;
             margin: 18px;
             padding: 10px;
-            word-spacing: 10px;
-            // width: 500px;
-            color: var(--logo-bg);
+            background: white;
+            word-spacing: 10px; 
+            color: var(--highlight);
             border-bottom: .5px solid var(--primaryCl);
+            border: 1px solid var(--highlight);
             text-transform: uppercase;
         }
         #play-your-part{
-            font-size: 2.1em;
+            font-size: 1.7em;
             color: var(--primaryCl);
             padding: 12px 10px;
-            background: var(--secondaryCl);
+            background: transparent;
             border: .2px solid var(--landing--bg);  
             border-radius: 5px;      
             &:hover{
@@ -272,8 +247,14 @@ span{
 #services{
     width: 100%;
     padding: .5rem 1rem;
+    z-index: 1;
     .header{
-        background: var(--primary-headerBg-cl);     
+        background: var(--primary-headerBg-cl);
+        text-align: center;
+        padding-top: 15px;
+        h2{
+            font-size: 1.5em;
+        }     
     }
     #what-we-do{
          text-align: center;
@@ -324,7 +305,7 @@ span{
             background: var(--secondaryCl);
         }
         .slider{
-            width: 1000px;
+            width: 100%;
             height: 500px;
             margin: 0px 50%;
             padding: 20px;
@@ -395,7 +376,7 @@ span{
         text-align: center;
         background: var(--body-bg-scBgSecondary);
         h3{
-            font-size: 2em;
+            font-size: 1.5em;
             background: var(--body-header-scBg);
             padding: 10px;
         }
@@ -418,10 +399,10 @@ span{
             font-size: 1.3rem;
         }
         .img-cont{
-            width: 400px;
+            width: 300px;
             height: 300px;
             padding: 20px;
-            margin: 0 20px;
+            margin: 15px 20px;
             text-align: center;
         }
 
@@ -487,8 +468,7 @@ span{
     margin-top: auto;
     margin-left: auto;
     h2{
-        font-size: var(--primary-fs);
-        font-weight: 400;
+        font-size: 1.5em;
         text-align: center;
         letter-spacing: 5px;
         margin-bottom: 5px;
@@ -507,7 +487,7 @@ span{
     }
 
     h3{
-        font-size: var(--secondary-fs);
+        font-size: 1.3em;
         font-weight: 400;
         text-align: center;
         margin-bottom: .2rem;
@@ -763,23 +743,11 @@ footer{
 }
 
 
-@media screen and (max-width: 620px){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        color: var(--primaryCl);
-        font-family: Popins, sans-serif;
-        font-size: 15px;
-    }
+@media screen and (max-width: 1000px){
     .navbar{
-        position: sticky;
         top: 0;
         height: 50px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         align-items: center;
         background: var(--primary-headerBg-cl);
@@ -815,7 +783,7 @@ footer{
         }
         .heading{
             color: var(--title-cl);
-            font-size: var(--primary-media-fs);
+            font-size: 1.6em;
         }
         ul{
             display: flex;
@@ -834,15 +802,13 @@ footer{
 
     }
 #container{
-    width: 100vw;
+    width: 100%;
 }
     .hero{
-        width: 100vw;
+        width: 100%;
         margin: 70px 5px 0 5px;
-        position: sticky;
         text-align: center;
-        text-justify: center;
-        z-index: 99;
+        text-justify: center;    
         
     }
 
@@ -867,7 +833,7 @@ footer{
     
     .holder{
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-image: url('/img/park1.jpg');
         background-repeat: no-repeat;
@@ -894,360 +860,78 @@ footer{
                 text-align: center;
                 padding: 2rem 2rem;
             }
-    
+            
             p{
                 color: var(--light-fc);
                 font-size: var(--tertiary-fs);
             }
     
         }
-    
-    }
-
-    .wrap{
-        display: block;
-        background: var(--body-bg-scBg);
-    }
-
-    #team{
-        overflow: hidden;
-        text-align: center;
-
-        p{
-            margin: 5px 10px;
-            padding: 3px 10px;
-            font-size: var(--tertiary-fs);
-        }
-    }
-
-    #about-me{
-        width: 100vw;
-
-        .last-container{
-            display: block;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-            background: var(--body-bg-scBgSecondary);
-        }        
-    }
-}
-@media screen and (max-width: 720px){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        color: var(--primaryCl);
-        font-family: Popins, sans-serif;
-        font-size: 15px;
-    }
-    .navbar{
-        position: sticky;
-        top: 0;
-        height: 50px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        background: var(--primary-headerBg-cl);
-        z-index: 99;
-        .header{
-            width: 100%;
-            margin: .5em;
-            display: flex;
-            align-items: center;
-            justify-content: start;        
-        }
-
-        .logo{
-            padding: 1rem 0 0 0;
-            background: var(--primary-headerBg-cl);
-            border-radius: 0 0 2em 2em;
-            right: 0;
-            top: 0;
-        }
-        img{
-            width: 100px;
-            align-items: center;
-            justify-content: center;
-            object-fit: cover;
-        }
-
-        .navigation{
-            text-decoration: none;
-            filter: invert(1);
-            justify-content: flex-end;
-            display: none;
-           
-        }
-        .heading{
-            color: var(--title-cl);
-            font-size: var(--primary-media-fs);
-        }
-        ul{
-            display: flex;
-    
-        }
-            li{
-        list-style: none;
-        padding: 0 2rem;         
-    }
-    .menu{
-        margin: 5em;
-        i{
-            width: 100px;
-        }
-    }
-
-    }
-#container{
-    width: 100vw;
-}
-    .hero{
-        width: 100vw;
-        margin: 70px 5px 0 5px;
-        position: sticky;
-        text-align: center;
-        text-justify: center;
-        z-index: 99;
-        
-    }
-
-    .upper{
-        margin: 3px 4px;
-        }   
-        p.subhead{
-            color: var(--secondaryCl);
-            letter-spacing: .1em;
-            font-size: var(--secondary-media-fs);
-            // background: var(--body-bg-scBg)
-        }
-
-    .subhead{
-        margin: 3px 0;
-        padding: 3px;
-    }
-    .logo, .subhead{
-         border-radius: 100px;
-    }
-
-    
-    .holder{
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        background-image: url('/img/park1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    
-    }
-
-    .block{
-        width: 100%;
-        padding: .5rem 1rem;
-    }
-    #services{
-        width: 100%;
-        padding: .5rem 1rem;
-         .services-boxes{
-            display: block;
-            align-items: center;
-            background: var(--body-bg-scBg);
+        #what-we-do{
             h3{
-                color: var(--primary-headerBg-cl);
-                font-size: var(--secondary-fs);
-                text-align: center;
-                padding: 2rem 2rem;
+                font-size: 1.2em;
+    
             }
-    
-            p{
-                color: var(--light-fc);
-                font-size: var(--tertiary-fs);
-            }
-    
+            .description{
+            
+                p{
+                    font-size: 15px;
+                }
         }
-    
-    }
-
-    .wrap{
-        display: block;
-        background: var(--body-bg-scBg);
-    }
-
-    #team{
-        overflow: hidden;
-        text-align: center;
-
-        p{
-            margin: 5px 10px;
-            padding: 3px 10px;
-            font-size: var(--tertiary-fs);
         }
-    }
-
-    #about-me{
-        width: 100vw;
-
-        .last-container{
-            display: block;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-            background: var(--body-bg-scBgSecondary);
-        }        
-    }
-}
-@media screen and (max-width: 1080px){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        color: var(--primaryCl);
-        font-family: Popins, sans-serif;
-        font-size: 15px;
-    }
-    .navbar{
-        position: sticky;
-        top: 0;
-        height: 50px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        background: var(--primary-headerBg-cl);
-        z-index: 99;
-        .header{
-            width: 100%;
-            margin: .5em;
-            display: flex;
-            align-items: center;
-            justify-content: start;        
-        }
-
-        .logo{
-            padding: 1rem 0 0 0;
-            background: var(--primary-headerBg-cl);
-            border-radius: 0 0 2em 2em;
-            right: 0;
-            top: 0;
-        }
-        img{
-            width: 100px;
-            align-items: center;
-            justify-content: center;
-            object-fit: cover;
-        }
-
-        .navigation{
-            text-decoration: none;
-            filter: invert(1);
-            justify-content: flex-end;
-            display: none;
-           
-        }
-        .heading{
-            color: var(--title-cl);
-            font-size: var(--primary-media-fs);
-        }
-        ul{
-            display: flex;
-    
-        }
-            li{
-        list-style: none;
-        padding: 0 2rem;         
-    }
-    .menu{
-        margin: 5em;
-        i{
-            width: 100px;
-        }
-    }
-
-    }
-#container{
-    width: 100vw;
-}
-    .hero{
-        width: 100vw;
-        margin: 70px 5px 0 5px;
-        position: sticky;
-        text-align: center;
-        text-justify: center;
-        z-index: 99;
-        
-    }
-
-    .upper{
-        margin: 3px 4px;
-        }   
-        p.subhead{
-            color: var(--secondaryCl);
-            letter-spacing: .1em;
-            font-size: var(--secondary-media-fs);
-            // background: var(--body-bg-scBg)
-        }
-
-    .subhead{
-        margin: 3px 0;
-        padding: 3px;
-    }
-    .logo, .subhead{
-         border-radius: 100px;
-    }
-
-    
-    .holder{
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        background-image: url('/img/park1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    
-    }
-
-    .block{
-        width: 100%;
-        padding: .5rem 1rem;
-    }
-    #services{
-        width: 100%;
-        padding: .5rem 1rem;
-         .services-boxes{
-            display: block;
-            align-items: center;
-            background: var(--body-bg-scBg);
+        #lwazi-background{
             h3{
-                color: var(--primary-headerBg-cl);
-                font-size: var(--secondary-fs);
-                text-align: center;
-                padding: 2rem 2rem;
+                font-size: 1.2em;
             }
-    
             p{
-                color: var(--light-fc);
-                font-size: var(--tertiary-fs);
+                font-size: 16px;
+            }
+            .slider{
+                width: 500px;
+                padding: 20px;
+                .slides{
+                    width: 240px;
+                    padding: 20px
+                }
             }
     
+        }
+        .details{       
+
+            h3{
+                font-size: 1.2em;
+            }
+            ul{
+                margin-top: 20px;
+                padding: 20px;
+            li{
+                margin: 0 15%;
+                font-size: 1em;
+                line-height: 1.9em;
+                text-align: start;
+                }            
+            }
+    
+        }
+        #what-we-doing{
+            h3{
+                font-size: 1.2em;
+            }
+            .wrapp{
+            display: block;
+            padding: 20px;
+            
+            p{
+                font-size: 16px;
+                line-height: 25px;
+            }
+            }   
+
+            
         }
     
     }
 
-    .wrap{
-        display: block;
-        background: var(--body-bg-scBg);
-    }
 
     #team{
         overflow: hidden;

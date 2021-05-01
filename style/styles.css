@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 :root {
-  --primary-headerBg-cl: #5e4e4ed2;
+  --primary-headerBg-cl: #5e4e4e;
   --primaryCl: #161616;
   --secondaryCl: rgb(255, 255, 255);
   --title-cl: linear-gradient(to right, rgb(238, 255, 0), green);
@@ -22,10 +22,6 @@
   --primary-media-fs: 1em;
   --secondary-media-fs: .5em;
   --navbar-icon-cl:rgb(255, 255, 255);
-}
-
-html {
-  width: 100%;
 }
 
 * {
@@ -52,50 +48,6 @@ span {
   color: var(--highlight);
 }
 
-#loader {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#loader > img {
-  width: 400px;
-}
-
-#loader.hidden {
-  -webkit-animation: fadeOut 4s;
-          animation: fadeOut 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 .holder {
   overflow: hidden;
   scroll-behavior: smooth;
@@ -105,7 +57,7 @@ span {
   position: fixed;
   top: 0;
   height: 90px;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +71,6 @@ span {
 
 .navbar .header {
   width: 100%;
-  max-width: 1170px;
   margin: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +211,8 @@ span {
 }
 
 .container {
+  padding-top: 200px;
+  width: 100%;
   position: relative;
   height: 100vh;
   background-image: url("/images/mainimg.jpg");
@@ -275,30 +228,34 @@ span {
 }
 
 .container #landing {
-  position: absolute;
   top: 50%;
-  width: 600px;
+  width: 100%;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
-  -webkit-transform: translateY(-50);
-          transform: translateY(-50);
+  -webkit-transform: translateY(-50%, -50%);
+          transform: translateY(-50%, -50%);
 }
 
 .container #landing h2 {
-  font-size: 2.7em;
+  font-size: 1.9em;
   margin: 18px;
   padding: 10px;
+  background: white;
   word-spacing: 10px;
-  color: var(--logo-bg);
+  color: var(--highlight);
   border-bottom: 0.5px solid var(--primaryCl);
+  border: 1px solid var(--highlight);
   text-transform: uppercase;
 }
 
 .container #landing #play-your-part {
-  font-size: 2.1em;
+  font-size: 1.7em;
   color: var(--primaryCl);
   padding: 12px 10px;
-  background: var(--secondaryCl);
+  background: transparent;
   border: 0.2px solid var(--landing--bg);
   border-radius: 5px;
 }
@@ -319,10 +276,17 @@ span {
 #services {
   width: 100%;
   padding: .5rem 1rem;
+  z-index: 1;
 }
 
 #services .header {
   background: var(--primary-headerBg-cl);
+  text-align: center;
+  padding-top: 15px;
+}
+
+#services .header h2 {
+  font-size: 1.5em;
 }
 
 #services #what-we-do {
@@ -378,7 +342,7 @@ span {
 }
 
 #services #lwazi-background .slider {
-  width: 1000px;
+  width: 100%;
   height: 500px;
   margin: 0px 50%;
   padding: 20px;
@@ -461,7 +425,7 @@ span {
 }
 
 #services .details h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   background: var(--body-header-scBg);
   padding: 10px;
 }
@@ -488,10 +452,10 @@ span {
 }
 
 #services .block .img-cont {
-  width: 400px;
+  width: 300px;
   height: 300px;
   padding: 20px;
-  margin: 0 20px;
+  margin: 15px 20px;
   text-align: center;
 }
 
@@ -575,8 +539,7 @@ span {
 }
 
 #team h2 {
-  font-size: var(--primary-fs);
-  font-weight: 400;
+  font-size: 1.5em;
   text-align: center;
   letter-spacing: 5px;
   margin-bottom: 5px;
@@ -596,7 +559,7 @@ span {
 }
 
 #team h3 {
-  font-size: var(--secondary-fs);
+  font-size: 1.3em;
   font-weight: 400;
   text-align: center;
   margin-bottom: .2rem;
@@ -911,28 +874,11 @@ footer {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 620px) {
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--primaryCl);
-    font-family: Popins, sans-serif;
-    font-size: 15px;
-  }
+@media screen and (max-width: 1000px) {
   .navbar {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -984,7 +930,7 @@ footer {
   }
   .navbar .heading {
     color: var(--title-cl);
-    font-size: var(--primary-media-fs);
+    font-size: 1.6em;
   }
   .navbar ul {
     display: -webkit-box;
@@ -1002,16 +948,13 @@ footer {
     width: 100px;
   }
   #container {
-    width: 100vw;
+    width: 100%;
   }
   .hero {
-    width: 100vw;
+    width: 100%;
     margin: 70px 5px 0 5px;
-    position: -webkit-sticky;
-    position: sticky;
     text-align: center;
     text-justify: center;
-    z-index: 99;
   }
   .upper {
     margin: 3px 4px;
@@ -1030,7 +973,7 @@ footer {
   }
   .holder {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("/img/park1.jpg");
     background-repeat: no-repeat;
@@ -1063,365 +1006,49 @@ footer {
     color: var(--light-fc);
     font-size: var(--tertiary-fs);
   }
-  .wrap {
-    display: block;
-    background: var(--body-bg-scBg);
+  #services #what-we-do h3 {
+    font-size: 1.2em;
   }
-  #team {
-    overflow: hidden;
-    text-align: center;
-  }
-  #team p {
-    margin: 5px 10px;
-    padding: 3px 10px;
-    font-size: var(--tertiary-fs);
-  }
-  #about-me {
-    width: 100vw;
-  }
-  #about-me .last-container {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    background: var(--body-bg-scBgSecondary);
-  }
-}
-
-@media screen and (max-width: 720px) {
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--primaryCl);
-    font-family: Popins, sans-serif;
+  #services #what-we-do .description p {
     font-size: 15px;
   }
-  .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 50px;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: var(--primary-headerBg-cl);
-    z-index: 99;
+  #services #lwazi-background h3 {
+    font-size: 1.2em;
   }
-  .navbar .header {
-    width: 100%;
-    margin: .5em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+  #services #lwazi-background p {
+    font-size: 16px;
   }
-  .navbar .logo {
-    padding: 1rem 0 0 0;
-    background: var(--primary-headerBg-cl);
-    border-radius: 0 0 2em 2em;
-    right: 0;
-    top: 0;
+  #services #lwazi-background .slider {
+    width: 500px;
+    padding: 20px;
   }
-  .navbar img {
-    width: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -o-object-fit: cover;
-       object-fit: cover;
+  #services #lwazi-background .slider .slides {
+    width: 240px;
+    padding: 20px;
   }
-  .navbar .navigation {
-    text-decoration: none;
-    -webkit-filter: invert(1);
-            filter: invert(1);
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    display: none;
+  #services .details h3 {
+    font-size: 1.2em;
   }
-  .navbar .heading {
-    color: var(--title-cl);
-    font-size: var(--primary-media-fs);
+  #services .details ul {
+    margin-top: 20px;
+    padding: 20px;
   }
-  .navbar ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  #services .details ul li {
+    margin: 0 15%;
+    font-size: 1em;
+    line-height: 1.9em;
+    text-align: start;
   }
-  .navbar li {
-    list-style: none;
-    padding: 0 2rem;
+  #services #what-we-doing h3 {
+    font-size: 1.2em;
   }
-  .navbar .menu {
-    margin: 5em;
-  }
-  .navbar .menu i {
-    width: 100px;
-  }
-  #container {
-    width: 100vw;
-  }
-  .hero {
-    width: 100vw;
-    margin: 70px 5px 0 5px;
-    position: -webkit-sticky;
-    position: sticky;
-    text-align: center;
-    text-justify: center;
-    z-index: 99;
-  }
-  .upper {
-    margin: 3px 4px;
-  }
-  p.subhead {
-    color: var(--secondaryCl);
-    letter-spacing: .1em;
-    font-size: var(--secondary-media-fs);
-  }
-  .subhead {
-    margin: 3px 0;
-    padding: 3px;
-  }
-  .logo, .subhead {
-    border-radius: 100px;
-  }
-  .holder {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/img/park1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .block {
-    width: 100%;
-    padding: .5rem 1rem;
-  }
-  #services {
-    width: 100%;
-    padding: .5rem 1rem;
-  }
-  #services .services-boxes {
+  #services #what-we-doing .wrapp {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: var(--body-bg-scBg);
+    padding: 20px;
   }
-  #services .services-boxes h3 {
-    color: var(--primary-headerBg-cl);
-    font-size: var(--secondary-fs);
-    text-align: center;
-    padding: 2rem 2rem;
-  }
-  #services .services-boxes p {
-    color: var(--light-fc);
-    font-size: var(--tertiary-fs);
-  }
-  .wrap {
-    display: block;
-    background: var(--body-bg-scBg);
-  }
-  #team {
-    overflow: hidden;
-    text-align: center;
-  }
-  #team p {
-    margin: 5px 10px;
-    padding: 3px 10px;
-    font-size: var(--tertiary-fs);
-  }
-  #about-me {
-    width: 100vw;
-  }
-  #about-me .last-container {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    background: var(--body-bg-scBgSecondary);
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--primaryCl);
-    font-family: Popins, sans-serif;
-    font-size: 15px;
-  }
-  .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 50px;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: var(--primary-headerBg-cl);
-    z-index: 99;
-  }
-  .navbar .header {
-    width: 100%;
-    margin: .5em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .navbar .logo {
-    padding: 1rem 0 0 0;
-    background: var(--primary-headerBg-cl);
-    border-radius: 0 0 2em 2em;
-    right: 0;
-    top: 0;
-  }
-  .navbar img {
-    width: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .navbar .navigation {
-    text-decoration: none;
-    -webkit-filter: invert(1);
-            filter: invert(1);
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    display: none;
-  }
-  .navbar .heading {
-    color: var(--title-cl);
-    font-size: var(--primary-media-fs);
-  }
-  .navbar ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar li {
-    list-style: none;
-    padding: 0 2rem;
-  }
-  .navbar .menu {
-    margin: 5em;
-  }
-  .navbar .menu i {
-    width: 100px;
-  }
-  #container {
-    width: 100vw;
-  }
-  .hero {
-    width: 100vw;
-    margin: 70px 5px 0 5px;
-    position: -webkit-sticky;
-    position: sticky;
-    text-align: center;
-    text-justify: center;
-    z-index: 99;
-  }
-  .upper {
-    margin: 3px 4px;
-  }
-  p.subhead {
-    color: var(--secondaryCl);
-    letter-spacing: .1em;
-    font-size: var(--secondary-media-fs);
-  }
-  .subhead {
-    margin: 3px 0;
-    padding: 3px;
-  }
-  .logo, .subhead {
-    border-radius: 100px;
-  }
-  .holder {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/img/park1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .block {
-    width: 100%;
-    padding: .5rem 1rem;
-  }
-  #services {
-    width: 100%;
-    padding: .5rem 1rem;
-  }
-  #services .services-boxes {
-    display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: var(--body-bg-scBg);
-  }
-  #services .services-boxes h3 {
-    color: var(--primary-headerBg-cl);
-    font-size: var(--secondary-fs);
-    text-align: center;
-    padding: 2rem 2rem;
-  }
-  #services .services-boxes p {
-    color: var(--light-fc);
-    font-size: var(--tertiary-fs);
-  }
-  .wrap {
-    display: block;
-    background: var(--body-bg-scBg);
+  #services #what-we-doing .wrapp p {
+    font-size: 16px;
+    line-height: 25px;
   }
   #team {
     overflow: hidden;
