@@ -6,20 +6,21 @@
         <link rel="shortcut icon" type="image/png" href="img/LOGO.png">
         <meta http-equiv="X-AU-Compatible" content="ie-edge">
         <title>Ulwazi Learning Development</title>
+        <meta property="og:url" content="https://www.ulwazilearningdevelopment.org/"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ulwazi Learning Development" />
+        <meta property="og:description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
+
+        My entire life I have live in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism."/>
+
         <meta property="og:image" href="img/LOGO.png">
         <meta property="og:image:type" content="img/LOGO.png">
         <meta property="og:image:width" content="300">
         <meta property="og:image:height" content="300">
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.ulwazilearningdevelopment.org/"/>
-        <meta property="og:title" content="Ulwazi Learning Development" />
-        <meta property="og:description" content="Website description." />
-        <meta name="description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
-
-        My entire life I have live in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism.">>
         <meta name="description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
 
         My entire live I have lived in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism.">
+
         <link rel="stylesheet" href="style/styles.css">
         <link rel="stylesheet" href="style/all.css">
     </head>
@@ -249,7 +250,7 @@
                     <h3>Mail us</h3>
                    
                     <div class="container-two">
-                        <form action="MAILTO:Lumka.johannes@ulwazilearningdevelopment.com" method="POST" id="my-form">
+                        <form action="mailto:Lumka.johannes@ulwazilearningdevelopment.com" enctype="multipart/form-data" method="POST" id="my-form">
                     
                           <div class="form-group">
                             <label for="firstName">First Name</label>
@@ -263,7 +264,7 @@
                     
                           <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                           </div>
                     
                           <div class="form-group">
@@ -308,12 +309,28 @@
                     <div class="items">                        
                     <img src="img/LOGO.png" alt="logo"> 
                     </div>
-                </div>              
+                </div>
+                <div class="fb-like" 
+                data-href="https://ulwazilearningdevelopment.org/index.html" 
+                data-width="80px"
+                data-layout="standard" 
+                data-action="like" 
+                data-size="small"  
+                data-share="true">
+           </div>              
             </div>
         </footer>
 
         <script src="js/app.js"></script>
         <script src="js/all.js"></script>
         <script src="https://kit.fontawesome.com/40d983fc97.js" crossorigin="anonymous"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" 
+              src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+                   &version={graph-api-version}
+                   &appId={your-facebook-app-id}
+                   &autoLogAppEvents=1" 
+              nonce="FOKrbAYI">
+        </script>
     </body>
 </html>
