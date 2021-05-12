@@ -898,18 +898,8 @@ footer{
         .details{       
 
             h3{
-                font-size: 1.2em;
-            }
-            ul{
-                margin-top: 20px;
-                padding: 20px;
-            li{
-                margin: 0 15%;
-                font-size: 1em;
-                line-height: 1.9em;
-                text-align: start;
-                }            
-            }
+                font-size: 1.5em;
+            }  
     
         }
         #what-we-doing{
@@ -935,28 +925,14 @@ footer{
     
     }
 
-
-    #team{
-        overflow: hidden;
-        text-align: center;
-
-        p{
-            margin: 5px 10px;
-            padding: 3px 10px;
-            font-size: var(--tertiary-fs);
+    .container-two{
+        .form-group{
+            color: white;
+            font-size: 15px;
+            .sub-button{
+                color: var(--highlight);
+            }
         }
     }
 
-    #about-me{
-        width: 100vw;
-
-        .last-container{
-            display: block;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-            background: var(--body-bg-scBgSecondary);
-        }        
-    }
 }
