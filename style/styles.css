@@ -9,14 +9,14 @@
   --tertiary-fs: 1.1rem;
   --subHeader:  rgb(0, 0, 0);
   --lineHeight: 1em;
-  --highlight: #FF0A70;
+  --highlight: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   --light-fc: #333;
   --logo-bg:  #161616;
   --landing--bg: #161616;
-  --body-header-scBg: rgba(0, 59, 96, 0.585);
-  --body-bg-scBg:  rgb(255, 110, 13);
+  --body-header-scBg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  --body-bg-scBg: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
   --donate-bg-scBg:  rgb(218, 88, 2);
-  --body-bg-scBgSecondary:  rgb(0, 86, 123);
+  --body-bg-scBgSecondary:  linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   --services-bg: linear-gradient(to right, rgb(238, 255, 0), green);
   --hover: rgb(255, 110, 13);
   --primary-media-fs: 1em;
