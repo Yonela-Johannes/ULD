@@ -16,3 +16,4 @@ function nextImage() {
     currentimageCounter = (currentimageCounter + 1) % slideshowImages.length;
     slideshowImages[currentimageCounter].style.display = "block";
 };
+

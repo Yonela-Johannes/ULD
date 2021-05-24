@@ -2,26 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root{
-    --primary-headerBg-cl: #5e4e4e;
-    --primaryCl: #161616;
+    --primary-headerBg-cl: #383a3f;
+    --primaryCl: #ffffff;
     --secondaryCl: rgb(255, 255, 255);
-    --title-cl: linear-gradient(to right, rgb(238, 255, 0), green);
+    --title-cl: linear-gradient(to right, rgb(238, 255, 0), rgb(238, 255, 0));
     --primary-fs: 2.3em;
     --secondary-fs: 2em;
     --tertiary-fs: 1.1rem;
     --subHeader:  rgb(0, 0, 0);
     --lineHeight: 1em;
-    --highlight: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);;
+    --highlight: linear-gradient(120deg, #552204 0%, #000000 100%);;
     --light-fc: #333;
-    --logo-bg:  #161616;
+    --logo-bg:  #552204;
     --landing--bg: #161616;
-    --body-header-scBg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);;
-    --body-bg-scBg: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);;
+    --body-header-scBg: #0f091d;
+    --body-bg-scBg: #270f01;
     --donate-bg-scBg:  rgb(218, 88, 2);
-    --body-bg-scBgSecondary:  linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);;
-    --services-bg: linear-gradient(to right, rgb(238, 255, 0), green);
-
-    --hover: rgb(255, 110, 13);
+    --body-bg-scBgSecondary:  #1b1a1a;
+    --services-bg: #552204;
+    --footer-clr: #0c0c0c;
+    --hover: rgb(39, 32, 102);
 
 
     // Media Elements
@@ -57,6 +57,14 @@ span{
 
 // scroll
 .holder{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/mainimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -192,7 +200,6 @@ span{
     width: 100%;
     position: relative;
     height: 100vh;
-    background-image: url('/images/mainimg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -208,12 +215,14 @@ span{
         margin: 0;
         transform: translateY(-50%, -50%);
         h2{
-            font-size: 1.9em;
+            font-size: 1.5em;
+            display: inline-block;
             margin: 18px;
             padding: 10px;
-            background: white;
+            background: black;
             word-spacing: 10px; 
-            color: var(--highlight);
+            color: white;
+            border-radius: 5px;
             border-bottom: .5px solid var(--primaryCl);
             border: 1px solid var(--highlight);
             text-transform: uppercase;
@@ -222,12 +231,17 @@ span{
             font-size: 1.7em;
             color: var(--primaryCl);
             padding: 12px 10px;
+            font-weight: 700;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
             background: transparent;
-            border: .2px solid var(--landing--bg);  
+            border: 2px solid var(--landing--bg); 
+            box-shadow: 0 1px 3px 3px rgba(10, 10, 10, 0.719); 
             border-radius: 5px;      
             &:hover{
-                color: var(--hover);
-                background: var(--landing--bg);
+                color: white;
+                background: black;
                 transition: all .5s ease 0s;
             }
             a{
@@ -246,8 +260,8 @@ span{
 // Services section
 #services{
     width: 100%;
-    padding: .5rem 1rem;
     z-index: 1;
+    color: var(--secondaryCl);
     .header{
         background: var(--primary-headerBg-cl);
         text-align: center;
@@ -266,9 +280,10 @@ span{
              border-bottom: 1px solid var(--logo-bg);
          }
         .description{
-            margin: 15px auto;
+            text-align: center;
+            margin: 5px auto;
             text-align: start;
-            width: 100%;
+            width: 50%;
             padding: 10px;
             border-bottom: 1px solid var(--body-bg-scBgSecondary);
          p{
@@ -277,15 +292,39 @@ span{
             margin: 10px;
          }      
             
-        }
-
-
-        
+        }        
          .feature-img{
              width: 300px;
              height: 280px;
              margin: 15px;
          }
+         .slider{
+            width: 70%;
+            height: 450px;
+            margin: 0;
+            padding: 10px;
+            display: flex;          
+            overflow: hidden;
+            margin: 0 auto;
+            .slides {
+                // display: flex;
+                width: 50%;     
+        
+            .slide{ 
+                transition: 6s;
+        
+                img{
+                    width: 300px;
+                    height: 350px;
+                    background-size: cover;        
+                }
+            }            
+        }
+        
+
+        
+        
+        }
     }
     #lwazi-background{
         height: 1000px;
@@ -305,53 +344,37 @@ span{
             padding: .7em ;
             background: var(--secondaryCl);
         }
-        .slider{
-            width: 100%;
-            height: 450px;
-            margin: 0;
-            padding: 10px;
-            display: flex;
-            background: var(--body-bg-scBgSecondary);
-            border-bottom: 2px solid var(--body-bg-scBgSecondary);    
-            .slides {
-                display: flex;         
-        
-            }
-        
-            .slide{ 
-                transition: 6s;
-        
-                img{
-                    width: 300px;
-                    height: 350px;
-                    background-size: cover;        
-                }
-            }
-        
-        
-        }
+
     }
     #what-we-doing{
-         text-align: center;
+        width: 100%;
+        text-align: center;
         background: var(--body-bg-scBgSecondary);
         h3{
-            font-size: 1.9em;
+            font-size: 1.9rem;
             padding: 20px;
             background: var(--body-header-scBg);
         }
-        .wrapp{
-            width: 100%;
-            margin: 0 auto;
-            padding: .5rem 1rem;
             h4{
-                font-size: 1.5em;
+                font-size: 1.7em;
                 padding: 1em 2em;
                 margin: 0 auto;
+
             }
             p{
-                font-size: 1.3em;
-                line-height: 1.5em;
-                margin: 1.3em auto;
+                width: 30%;
+                padding: 10px;
+                margin: 10px auto;
+                font-size: 1.5rem;
+
+            }       
+        .wrapp{
+            margin: 0 auto;
+            p{
+                width: 50%;
+                padding: 10px;
+                margin: 0 auto;
+                font-size: 1.5rem;
             }
         }
     }
@@ -373,11 +396,10 @@ span{
         height: 4px;
     }
     .details{       
-        padding: 15px;
         text-align: center;
         background: var(--body-bg-scBgSecondary);
         h3{
-            font-size: 1.5em;
+            font-size: 1.9rem;
             background: var(--body-header-scBg);
             padding: 10px;
         }
@@ -386,7 +408,7 @@ span{
             padding: 20px;
         li{
             margin: 0 15%;
-            font-size: 1.5em;
+            font-size: 1.9em;
             line-height: 1.9em;
             text-align: start;
             }            
@@ -396,24 +418,31 @@ span{
     .block{
         text-align: center;
         padding: 15px;
+        margin: 0 auto;
+        width: 80%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         p{
             font-size: 1.3rem;
         }
         .img-cont{
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 200px;
             padding: 20px;
             margin: 15px 20px;
             text-align: center;
         }
 
         .icon{
+            width: 5px;
             display: flex;
             justify-content: center;
-            margin: 15px auto;
+            margin: 0 auto;
+            color: var(--logo-bg);
         }
         .wrapper{
-            margin-top: 20px;
             button{
                 box-shadow: none;
             }
@@ -702,43 +731,25 @@ button[type="submit"]:hover {
 
 }
 // End of About Me Section
-footer{
+#footer{
     bottom: 0;
     width: 100%;
-    background: var(--body-bg-scBgSecondary);
+    background: var(--footer-clr);
     border: 1px solid black;
+
 }
 
 .main-content{
     display: flex;
+    width: 100%;
+    text-align: center;
 
     .box{
         flex-basis: 50%;
         padding: 10px 20px;
+        margin: 0 auto;
 
-        .items{
-            margin: 20px 0 0 0;
 
-            .social{
-                margin: 20px 0 0 0;
-            }
-            img{
-                width: 80px;
-            }
-        }
-    }
-    .left{
-        display: flex;
-        margin: 10px;
-        p{
-            justify-self: flex-start;
-        }
-
-        }
-    h2{
-        font-size: 1.1rem;
-        font-weight: 300;
-        text-transform: uppercase;
     }
 
 }
@@ -747,12 +758,15 @@ footer{
 @media screen and (max-width: 1000px){
     .navbar{
         top: 0;
-        height: 50px;
+        height: 90px;
         width: 100%;
+        color: white;
         display: flex;
+        text-transform: uppercase;
         align-items: center;
         background: var(--primary-headerBg-cl);
         z-index: 99;
+        position: sticky;
         .header{
             width: 100%;
             margin: .5em;
@@ -760,7 +774,6 @@ footer{
             align-items: center;
             justify-content: start;        
         }
-
         .logo{
             padding: 1rem 0 0 0;
             background: var(--primary-headerBg-cl);
@@ -802,8 +815,17 @@ footer{
     }
 
     }
-#container{
+.container{
     width: 100%;
+    #landing{       
+        h2{
+            font-size: 1.4rem;           
+        }
+        #play-your-part{
+            font-size: 1.2rem;           
+
+        }
+    }
 }
     .hero{
         width: 100%;
@@ -836,11 +858,10 @@ footer{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('/img/park1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: scroll;
     
     }
 
@@ -849,8 +870,9 @@ footer{
         padding: .5rem 1rem;
     }
     #services{
+        margin: 0;
         width: 100%;
-        padding: .5rem 1rem;
+        // padding: .5rem 1rem;
          .services-boxes{
             display: block;
             align-items: center;
@@ -873,26 +895,45 @@ footer{
                 font-size: 1.2em;
     
             }
+            .feature img{
+                width: 200px;
+                height: 200px;
+            }
             .description{
-            
+                width: 100%;
+                text-align: center;
+                padding: 10px;
                 p{
                     font-size: 15px;
+                    width: 80%;
+                    margin: 0 auto;
                 }
         }
+        .slider{
+            width: 100%;
+            overflow: hidden;
+            padding: 15px;
+                .slides{
+                width: 100%;
+                         
+            }
         }
-        #lwazi-background{
+    }
+    .block{
+        width: 100%;
+        
+    }
+        #lwazi-background{               
+                background: var(--body-bg-scBgSecondary);
             h3{
                 font-size: 1.2em;
+                background: gray;
             }
             p{
                 font-size: 16px;
+                background: grey;
             }
-            .slider{
-                width: 500px;
-                    .slides{
-                    width: 400px;                   
-                }
-            }
+
     
         }
         .details{       
@@ -903,26 +944,31 @@ footer{
     
         }
         #what-we-doing{
+            width: 100%;
             h3{
                 font-size: 1.2em;
             }
-            .wrapp{
-            display: block;
-            padding: 20px;
-
-            .display-img{
+            .display-img
+            {
                 width: 200px;
             }
             
             p{
                 font-size: 16px;
                 line-height: 25px;
+                width: 100%;
+            }
+            .wrapp{
+                p{
+                    font-size: 16px;
+                line-height: 25px;
+                width: 100%;
+                }
             }
             }   
 
             
-        }
-    
+           
     }
 
     .container-two{

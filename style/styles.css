@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 :root {
-  --primary-headerBg-cl: #5e4e4e;
-  --primaryCl: #161616;
+  --primary-headerBg-cl: #383a3f;
+  --primaryCl: #ffffff;
   --secondaryCl: rgb(255, 255, 255);
-  --title-cl: linear-gradient(to right, rgb(238, 255, 0), green);
+  --title-cl: linear-gradient(to right, rgb(238, 255, 0), rgb(238, 255, 0));
   --primary-fs: 2.3em;
   --secondary-fs: 2em;
   --tertiary-fs: 1.1rem;
   --subHeader:  rgb(0, 0, 0);
   --lineHeight: 1em;
-  --highlight: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  --highlight: linear-gradient(120deg, #552204 0%, #000000 100%);
   --light-fc: #333;
-  --logo-bg:  #161616;
+  --logo-bg:  #552204;
   --landing--bg: #161616;
-  --body-header-scBg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-  --body-bg-scBg: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  --body-header-scBg: #0f091d;
+  --body-bg-scBg: #270f01;
   --donate-bg-scBg:  rgb(218, 88, 2);
-  --body-bg-scBgSecondary:  linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-  --services-bg: linear-gradient(to right, rgb(238, 255, 0), green);
-  --hover: rgb(255, 110, 13);
+  --body-bg-scBgSecondary:  #1b1a1a;
+  --services-bg: #552204;
+  --footer-clr: #0c0c0c;
+  --hover: rgb(39, 32, 102);
   --primary-media-fs: 1em;
   --secondary-media-fs: .5em;
   --navbar-icon-cl:rgb(255, 255, 255);
@@ -49,6 +50,14 @@ span {
 }
 
 .holder {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/mainimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -215,7 +224,6 @@ span {
   width: 100%;
   position: relative;
   height: 100vh;
-  background-image: url("/images/mainimg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -240,12 +248,14 @@ span {
 }
 
 .container #landing h2 {
-  font-size: 1.9em;
+  font-size: 1.5em;
+  display: inline-block;
   margin: 18px;
   padding: 10px;
-  background: white;
+  background: black;
   word-spacing: 10px;
-  color: var(--highlight);
+  color: white;
+  border-radius: 5px;
   border-bottom: 0.5px solid var(--primaryCl);
   border: 1px solid var(--highlight);
   text-transform: uppercase;
@@ -255,14 +265,20 @@ span {
   font-size: 1.7em;
   color: var(--primaryCl);
   padding: 12px 10px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
   background: transparent;
-  border: 0.2px solid var(--landing--bg);
+  border: 2px solid var(--landing--bg);
+  -webkit-box-shadow: 0 1px 3px 3px rgba(10, 10, 10, 0.719);
+          box-shadow: 0 1px 3px 3px rgba(10, 10, 10, 0.719);
   border-radius: 5px;
 }
 
 .container #landing #play-your-part:hover {
-  color: var(--hover);
-  background: var(--landing--bg);
+  color: white;
+  background: black;
   -webkit-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
 }
@@ -275,8 +291,8 @@ span {
 
 #services {
   width: 100%;
-  padding: .5rem 1rem;
   z-index: 1;
+  color: var(--secondaryCl);
 }
 
 #services .header {
@@ -301,9 +317,10 @@ span {
 }
 
 #services #what-we-do .description {
-  margin: 15px auto;
+  text-align: center;
+  margin: 5px auto;
   text-align: start;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border-bottom: 1px solid var(--body-bg-scBgSecondary);
 }
@@ -318,6 +335,33 @@ span {
   width: 300px;
   height: 280px;
   margin: 15px;
+}
+
+#services #what-we-do .slider {
+  width: 70%;
+  height: 450px;
+  margin: 0;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#services #what-we-do .slider .slides {
+  width: 50%;
+}
+
+#services #what-we-do .slider .slides .slide {
+  -webkit-transition: 6s;
+  transition: 6s;
+}
+
+#services #what-we-do .slider .slides .slide img {
+  width: 300px;
+  height: 350px;
+  background-size: cover;
 }
 
 #services #lwazi-background {
@@ -342,62 +386,40 @@ span {
   background: var(--secondaryCl);
 }
 
-#services #lwazi-background .slider {
-  width: 100%;
-  height: 450px;
-  margin: 0;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: var(--body-bg-scBgSecondary);
-  border-bottom: 2px solid var(--body-bg-scBgSecondary);
-}
-
-#services #lwazi-background .slider .slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#services #lwazi-background .slider .slide {
-  -webkit-transition: 6s;
-  transition: 6s;
-}
-
-#services #lwazi-background .slider .slide img {
-  width: 300px;
-  height: 350px;
-  background-size: cover;
-}
-
 #services #what-we-doing {
+  width: 100%;
   text-align: center;
   background: var(--body-bg-scBgSecondary);
 }
 
 #services #what-we-doing h3 {
-  font-size: 1.9em;
+  font-size: 1.9rem;
   padding: 20px;
   background: var(--body-header-scBg);
 }
 
-#services #what-we-doing .wrapp {
-  width: 100%;
-  margin: 0 auto;
-  padding: .5rem 1rem;
-}
-
-#services #what-we-doing .wrapp h4 {
-  font-size: 1.5em;
+#services #what-we-doing h4 {
+  font-size: 1.7em;
   padding: 1em 2em;
   margin: 0 auto;
 }
 
+#services #what-we-doing p {
+  width: 30%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+}
+
+#services #what-we-doing .wrapp {
+  margin: 0 auto;
+}
+
 #services #what-we-doing .wrapp p {
-  font-size: 1.3em;
-  line-height: 1.5em;
-  margin: 1.3em auto;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 #services h2 {
@@ -420,13 +442,12 @@ span {
 }
 
 #services .details {
-  padding: 15px;
   text-align: center;
   background: var(--body-bg-scBgSecondary);
 }
 
 #services .details h3 {
-  font-size: 1.5em;
+  font-size: 1.9rem;
   background: var(--body-header-scBg);
   padding: 10px;
 }
@@ -438,7 +459,7 @@ span {
 
 #services .details ul li {
   margin: 0 15%;
-  font-size: 1.5em;
+  font-size: 1.9em;
   line-height: 1.9em;
   text-align: start;
 }
@@ -446,6 +467,16 @@ span {
 #services .block {
   text-align: center;
   padding: 15px;
+  margin: 0 auto;
+  width: 80%;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 #services .block p {
@@ -453,25 +484,23 @@ span {
 }
 
 #services .block .img-cont {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
   padding: 20px;
   margin: 15px 20px;
   text-align: center;
 }
 
 #services .block .icon {
+  width: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 15px auto;
-}
-
-#services .block .wrapper {
-  margin-top: 20px;
+  margin: 0 auto;
+  color: var(--logo-bg);
 }
 
 #services .block .wrapper button {
@@ -827,10 +856,10 @@ button[type="submit"]:hover {
   font-size: var(--tertiary-fs);
 }
 
-footer {
+#footer {
   bottom: 0;
   width: 100%;
-  background: var(--body-bg-scBgSecondary);
+  background: var(--footer-clr);
   border: 1px solid black;
 }
 
@@ -838,56 +867,34 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  text-align: center;
 }
 
 .main-content .box {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 10px 20px;
-}
-
-.main-content .box .items {
-  margin: 20px 0 0 0;
-}
-
-.main-content .box .items .social {
-  margin: 20px 0 0 0;
-}
-
-.main-content .box .items img {
-  width: 80px;
-}
-
-.main-content .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-}
-
-.main-content .left p {
-  justify-self: flex-start;
-}
-
-.main-content h2 {
-  font-size: 1.1rem;
-  font-weight: 300;
-  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
   .navbar {
     top: 0;
-    height: 50px;
+    height: 90px;
     width: 100%;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-transform: uppercase;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background: var(--primary-headerBg-cl);
     z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
   }
   .navbar .header {
     width: 100%;
@@ -948,8 +955,14 @@ footer {
   .navbar .menu i {
     width: 100px;
   }
-  #container {
+  .container {
     width: 100%;
+  }
+  .container #landing h2 {
+    font-size: 1.4rem;
+  }
+  .container #landing #play-your-part {
+    font-size: 1.2rem;
   }
   .hero {
     width: 100%;
@@ -976,19 +989,18 @@ footer {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("/img/park1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
   .block {
     width: 100%;
     padding: .5rem 1rem;
   }
   #services {
+    margin: 0;
     width: 100%;
-    padding: .5rem 1rem;
   }
   #services .services-boxes {
     display: block;
@@ -1010,37 +1022,63 @@ footer {
   #services #what-we-do h3 {
     font-size: 1.2em;
   }
+  #services #what-we-do .feature img {
+    width: 200px;
+    height: 200px;
+  }
+  #services #what-we-do .description {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
   #services #what-we-do .description p {
     font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #services #what-we-do .slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+  }
+  #services #what-we-do .slider .slides {
+    width: 100%;
+  }
+  #services .block {
+    width: 100%;
+  }
+  #services #lwazi-background {
+    background: var(--body-bg-scBgSecondary);
   }
   #services #lwazi-background h3 {
     font-size: 1.2em;
+    background: gray;
   }
   #services #lwazi-background p {
     font-size: 16px;
-  }
-  #services #lwazi-background .slider {
-    width: 500px;
-  }
-  #services #lwazi-background .slider .slides {
-    width: 400px;
+    background: grey;
   }
   #services .details h3 {
     font-size: 1.5em;
   }
+  #services #what-we-doing {
+    width: 100%;
+  }
   #services #what-we-doing h3 {
     font-size: 1.2em;
   }
-  #services #what-we-doing .wrapp {
-    display: block;
-    padding: 20px;
-  }
-  #services #what-we-doing .wrapp .display-img {
+  #services #what-we-doing .display-img {
     width: 200px;
+  }
+  #services #what-we-doing p {
+    font-size: 16px;
+    line-height: 25px;
+    width: 100%;
   }
   #services #what-we-doing .wrapp p {
     font-size: 16px;
     line-height: 25px;
+    width: 100%;
   }
   .container-two .form-group {
     color: white;
