@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 :root {
-  --primary-headerBg-cl: #383a3f;
+  --primary-headerBg-cl: hsl(209, 61%, 16%);
   --primaryCl: #ffffff;
   --secondaryCl: rgb(255, 255, 255);
   --title-cl: linear-gradient(to right, rgb(238, 255, 0), rgb(238, 255, 0));
@@ -14,7 +14,7 @@
   --logo-bg:  #552204;
   --landing--bg: #161616;
   --body-header-scBg: #0f091d;
-  --body-bg-scBg: #270f01;
+  --body-bg-scBg: hsl(205, 100%, 96%);
   --donate-bg-scBg:  rgb(218, 88, 2);
   --body-bg-scBgSecondary:  #1b1a1a;
   --services-bg: #552204;
@@ -43,6 +43,11 @@ h1 {
   font-size: var(--primary-fs);
   color: var(--title-cl);
   line-height: var(--lineHeight);
+}
+
+p {
+  background: #243a52;
+  padding: 1.2rem;
 }
 
 span {
@@ -465,11 +470,9 @@ span {
 }
 
 #services .block {
-  text-align: center;
   padding: 15px;
   margin: 0 auto;
-  width: 80%;
-  display: inline-block;
+  width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -531,13 +534,10 @@ span {
 }
 
 #services .services-boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--body-bg-scBg);
   padding: 1.5rem 3rem;
 }
 
@@ -1079,6 +1079,9 @@ button[type="submit"]:hover {
     font-size: 16px;
     line-height: 25px;
     width: 100%;
+  }
+  #services p {
+    color: white;
   }
   .container-two .form-group {
     color: white;
