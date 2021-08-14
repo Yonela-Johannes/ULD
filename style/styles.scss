@@ -105,7 +105,10 @@ span{
         object-fit: cover;
     }
     .navigation{ 
-        justify-content: flex-end;
+        background: black;
+        ul{
+            background: black;
+        }
        .donate{
            background: var(--highlight);
            &:hover{
@@ -200,37 +203,7 @@ span{
     position: relative;
 }
 .container{
-    // padding-top: 200px;
-    // width: 100%;
-    // position: relative;
-    // height: 100vh;
-    // background-position: center;
-    // background-size: cover;
-    // background-attachment: fixed;
-    // object-fit: cover;
-    // text-align: center;
-    // justify-content: center;         
-    
-    #landing{
-        // top: 50%;
-        // width: 100%;
-        // text-align: center;
-        // justify-content: center;
-        // margin: 0;
-        // transform: translateY(-50%, -50%);
-        h2{
-            // font-size: 1.5em;
-            // display: inline-block;
-            // margin: 18px;
-            // padding: 10px;
-            // background: black;
-            // word-spacing: 10px; 
-            // color: white;
-            // border-radius: 5px;
-            // border-bottom: .5px solid var(--primaryCl);
-            // border: 1px solid var(--highlight);
-            // text-transform: uppercase;
-        }
+
         #play-your-part{
             font-size: 1.7em;
             color: var(--clr-primary-5);
@@ -249,17 +222,13 @@ span{
                 transition: all .5s ease 0s;
             }
             a{
-                 text-decoration: none;
-                //  color: var(--logo-bg);
-                //  text-transform: uppercase;                
+                 text-decoration: none;             
             }
           
         }
 
     }
 
-
-}
 
 // Services section
 #services{
@@ -277,7 +246,13 @@ span{
     #what-we-do{
          text-align: center;
          background: var(--body-bg-scBg);
-
+        width: 100%;
+         .slider{
+             width: 50%;
+             .slides{
+                 width: 50%;
+             }
+         }
          h3{
              font-size: 2em;
              padding: 15px 15px 25px 15px;
@@ -766,7 +741,7 @@ button[type="submit"]:hover {
         display: flex;
         text-transform: uppercase;
         align-items: center;
-        background: var(--primary-headerBg-cl);
+        // background: var(--primary-headerBg-cl);
         z-index: 99;
         position: sticky;
         .header{
@@ -822,10 +797,6 @@ button[type="submit"]:hover {
     #landing{       
         h2{
             font-size: 1.4rem;           
-        }
-        #play-your-part{
-            // font-size: 1.2rem;           
-            // color: var(--clr-primary-5);
         }
     }
 }
@@ -974,15 +945,4 @@ button[type="submit"]:hover {
             
            
     }
-
-    .container-two{
-        .form-group{
-            // color: white;
-            // font-size: 15px;
-            .sub-button{
-                // color: var(--highlight);
-            }
-        }
-    }
-
 }

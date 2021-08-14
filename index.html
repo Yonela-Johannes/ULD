@@ -1,323 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="img/LOGO.png">
-        <meta http-equiv="X-AU-Compatible" content="ie-edge">
-        <title>Ulwazi Learning Development</title>
-        <meta property="og:url" content="https://www.ulwazilearningdevelopment.org/"/>
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Ulwazi Learning Development" />
-        <meta property="og:description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/LOGO.png">
+    <meta http-equiv="X-AU-Compatible" content="ie-edge">
+    <title>Ulwazi Learning Development</title>
+    <meta property="og:url" content="https://www.ulwazilearningdevelopment.org/"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ulwazi Learning Development" />
+    <meta property="og:description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
 
-        My entire life I have live in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism."/>
+    My entire life I have live in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism."/>
 
-        <meta property="og:image" href="img/LOGO.png">
-        <meta property="og:image:type" content="img/LOGO.png">
-        <meta property="og:image:width" content="300">
-        <meta property="og:image:height" content="300">
-        <meta name="description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
+    <meta property="og:image" href="img/LOGO.png">
+    <meta property="og:image:type" content="img/LOGO.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta name="description" content="Ulwazi Learning Development is a holiday programme that generates no monetary income and its soul purpose focuses on the children during holidays.
 
-        My entire live I have lived in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism.">
-
-        <link rel="stylesheet" href="style/styles.css">
-        <link rel="stylesheet" href="style/all.css">
-    </head>
-    <body>
-        <!-- Welcome section -->
-        <div class="holder">
-            <!-- navigation bar -->
-            <div class="navbar">
-                <div class="header">
-                    <img src="img/LOGO.png" class="logo"><h1 class="heading">Ulwazi Learning <span>Development</span></h1>
-                </div>
-                <div class="navigation">
-                    <ul>
-                        <li class="current"><a href="#home">Home</a></li>
-                        <li><a href="#what-we-do">About</li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#footer">Contact</a></li>                 
-                    </ul>
-                </div>      
+    My entire live I have lived in the township and I am a witness of children getting bored because they have nothing interesting to do. Then they end up indulging in alcoholic and drug substances , some get involved in the wrong influence of friends and end up in gangsterism.">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href='css/styles.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+      <!-- ====== SCROLL TOP ======= -->
+    <a href="#" class="scrolltop">
+        <i class="fas fa-chevron-up scroll_icon"></i>
+    </a>
+      <!-- ====== HEADER ======= -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <img src="img/LOGO.png" alt="log" class="nav_logo">
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list bd-grid">
+                    <il class="nav_item"><a href="#home" class="nav_link">
+                        <i class="fas fa-home nav_icon"></i>Home</a></il>
+                    <il class="nav_item"><a href="#about" class="nav_link">
+                        <i class="fas fa-users nav_icon"></i>About</a></il>
+                    <il class="nav_item"><a href="#founder" class="nav_link">
+                        <i class="fas fa-user-alt nav_icon"></i>Founder</a></il>
+                    <il class="nav_item"><a href="#donate-button" class="nav_link">
+                        <i class="fas fa-hand-holding-medical nav_icon"></i>Donate</a></il>
+                    <il class="nav_item"><a href="#contact" class="nav_link">
+                        <i class="fas fa-envelope-square nav_icon"></i>Contact</a></il>                   
+                </ul>
+                <i class="nav_close fas fa-times" id="nav-close"></i>
             </div>
-            <!-- end of navigation bar -->
-            <div class="container">             
-                <div id="landing">
-                    <!-- <h2>Make A Big Change</h2> -->
-                    <button id="play-your-part"><a href="#donate">Make a Big Change</a></button>
+            <div class="nav_btns">
+                <div class="nav_toggle nav_icon" id="nav-toggle">
+                    <i class="fas fa-bars nav_icon"></i>
                 </div>
-
-                </div> 
             </div>
-        </div>
-        <!-- end of welcome section -->
-
-        <!-- Services section-->
-        <section id="services">
-                <div class="header">
-                    <h2>Services</h2>
-                </div>
-            <!-- What we do section -->
-            <section id="what-we-do">
-                <h3>What we are about</h3>
-
-                <!-- image slider -->
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide first">
-                            <img src="img/11.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/5.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/6.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/back.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/3.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/2.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/9.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/8.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/11.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/7.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="img/12.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/mainimg.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img1.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img2.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img3.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img4.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img5.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img6.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img7.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img8.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img9.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img10.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img11.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img12.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img13.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="images/img14.jpg" alt="image-slide">
-                        </div>
-                    </div>
-                </div> 
+        </nav>
+    </header>
+      <!-- ====== MAIN ======= -->
+    <main class="l-main" id="main">
+        <!-- HOME -->
+        <section class="home" id="home">
             <!-- image slider -->
-                <div class="description">
-                    <p>Lwazi Learning Development is a Non-Profit-organization, our aim is to empower the youngest most vurnerable children from poor homes.
-                    </p>
-                    <p>Most important, Life Skills and basic education has the most fundamental power to transform the lives of Children.</p>
-                    <p>Foundational Education is linked to all development goals such as reducing hunger, fighting the spread of deseases,, poverty, encouraging economic growth and creating peace.</p>
+            <div class="home-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/mainimg.jpg" class="image-slide" alt="image-slide"></div>
+                    <div class="swiper-slide"><img src="images/img1.jpg" class="image-slide" alt="image-slide"></div>
+                    <div class="swiper-slide"><img src="images/img13.jpg" class="image-slide" alt="image-slide"></div>
+                    <div class="swiper-slide"><img src="img/6.jpg" class="image-slide" alt="image-slide"></div>
                 </div>
+            </div>
+        <!-- image slider -->
+            <div class="home_container bd-container bd-grid">
+                <div class="home_data">
+                    <h1 class="home_title">Ulwazi Learning Development</h1>
+                    <h2 class="home_subtitle">Learning without limits.</h2>
+                    
+                    <div class="about_description">Ulwazi Learning Development is a Non-Profit-organization. Our aim is to empower the youngest most vurnerable children from poor homes.
+                        <br> Most important, Life Skills and basic education has the most fundamental power to transform the lives of Children.
+                    </div>
+                    <button class="button">Make a big change</button>
+                    <div class="about_description home-top">Foundational Education is linked to all development goals such as reducing hunger, fighting the spread of deseases,, poverty, encouraging economic growth and creating peace.
+                </div>
+                </div>
+            </div>
         </section>
-        <!-- Background section -->
-        <div class="blocks">
-            <div class="services-boxes">
-                <div class="block">
-                    <h3>About us</h3>
-                    <div class="icon">
-                        <i class="fas fa-info fa"></i>
-                    </div>
-                    <p>We bring <strong>children</strong> together and expose them to other views of life, than the views that they grew up into
-                        <br>
-                        We expose children to healthy positive role-models, and the importance of self-development and self-knowing, awareness and the fundamentals of education.
-                        <br>
-                        <strong>Ulwazi</strong> means <strong>'Knowledge,</strong> in Xhosa.
-                        And it was founded by <strong><span>Lumka Johannes</span></strong>.
-                        Lwazi was founded in June 2018
-                    </p>
+        <!-- About section -->
+        <section class="about section bd-container" id="about">
+            <div class="about_container">
+                <div class="about_data">
+                    
+                <img src="img/LOGO.png" alt="logo" class="about_img">
+                    <h2 class="section-subtitle">About us</h2>
+                    <span class="section-title about-title">Ulwazi means 'Knowledge', in Xhosa. It was founded by Lumka Johannes.</span>
+                    <div class="about_description">We bring children together and expose them to other views of life, than the views that they grew up in.
+                        We expose children to healthy positive role-models, and the importance of self-development and self-knowing,</div>
                 </div>
-                <div class="block">
-                    <h3>Grow A Seed</h3>
-                    <div class="icon">
-                        <i class="fas fa-seedling fa"></i>
-                    </div>
-                    <img class="img-cont" src="images/grow.jpg" alt="grow a plant image">
-                    <p>You can empower the youngest and the most vurnerable leaders of the future, who come from poor suffering homes.</p>
-                </div>  
-                <div class="block">
-                    <h3 id="donate">Donate</h3>
-                    <div class="icon">
-                        <i class="fas fa-hand-holding-heart fa"></i>
-                    </div>
-                    <img class="img-cont" src="images/lovespread.jfif" alt="grow a plant image">                        
-                    <p>Make a big change and change the future of these poor kids.  Donate to Ulwazi so we can fully function.
-                        Contact us if you want to contribute in your manner. We would appreciate it.
-                    </p>
-                    <div class="wrapper">
-                        <form id="donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
-                            <input type="hidden" name="hosted_button_id" value="3297RXXACGQ7Q" />
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                            <img alt="" border="0" src="https://www.paypal.com/en_ZA/i/scr/pixel.gif" width="1" height="1" />
-                        </form>                                                
-                    </div>
+                <h4 class="highlight">Learning without limits.</h4>
+                <div class="about-history">
+                    <p>Our main focus and core purpose is to keep young children off the streets where they are prey to gangsterism, away from drugs and alcohol usage. To mold a healthy and a looking forward positive thinking youth. Children who will create a more happy and better living for themselves and their families.</p>
+                </div>
+                <div class="wrapper">
+                    <form id="donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="3297RXXACGQ7Q" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                        <img alt="" border="0" src="https://www.paypal.com/en_ZA/i/scr/pixel.gif" width="2" height="3" />
+                    </form>                                                
+                </div>
+            </div>
+            <!-- SERVICES SECTION -->
+                    <!-- Swiper -->
+    
+        <div #swiperRef="" class="swiper-container mySwiper about-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/5.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/back.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/img1.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/11.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/img14.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/7.jpg" alt=""></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/6.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/5.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/4.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/3.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/2.jpg" alt=" display image "></div>
+              <div class="swiper-slide
+              about_swiper_img"><img src="/img/12.jpg" alt=" display image "></div>
+    
+            </div>           
+          </div>
+          <h4 class="home_subtitle section_subtitle" align-self="center" margin-top="20px">Our Plans</h4>
+          <div class="goals">
+              <ul class="nav_item left">
+                  <li class="home_subtitle subtile">Our Start</li>
+                  <img src="./images/mar2.jpg" alt=" children " class="image_content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores et consequatur necessitatibus corrupti cupiditate dolorem, debitis ipsa, natus exercitationem quos pariatur.</p>
+              </ul>
+              <ul class="nav_item left">
+                  <li class="home_subtitle">Our Mission</li>
+                  <img src="./images/bus.jpg" alt=" children " class="image_content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores et consequatur necessitatibus corrupti cupiditate dolorem, debitis ipsa, natus exercitationem quos pariatur.</p>
+              </ul>
+              <ul class="nav_item left">
+                  <li class="home_subtitle">Our Vision</li>
+                  <img src="./images/mat.jpg" alt=" children " class="image_content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores et consequatur necessitatibus corrupti cupiditate dolorem, debitis ipsa, natus exercitationem quos pariatur.</p>
+              </ul>
+          </div>
 
-                </div>                  
-            </div>
-            <div class="details">
-                <h3>Contact us</h3>               
-                <div class="container-two">
-                    <div id="error-message"></div>
-                    <form action="mailto:Lumka.johannes@ulwazilearningdevelopment.com" enctype="multipart/form-data" method="POST" id="my-form" onsubmit="return validation()">
-                
-                      <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Enter Name" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label for="latsName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Enter Surname" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                      </div>
-                
-                      <button class="sub-button" type="submit">Submit</button>
-                    </form>
-                  </div>
-                  <div id="status"></div>
-            </div>               
-        </div>
-        <div id="what-we-doing">
-            <h3><span>Ulwazi Children</span> Centre</h3>
-            <img class="logo" src="img/LOGO.png" alt="Ulwazi Logo">
-            <h4>Learning without limits.</h4>
-            <p>Our main focus and core purpose is to keep young children off the streets where they are prey to gangster, away from drugs and alcohol usage, is to create a healthy and a looking forward futuristic focussed throught the present positive thinking youth. Children who will create a more happy and better living for themselves and families.</p>
-            <div class="wrapp">
-                <img class="display-img" src="images/lush.jpg" alt="woman standing">
-                <h4>Lumka Johannes</h4>
-                <p>Lumka Johannes grew up in Townships, in the most poorest South-African communities around Eastern Cape and Cape Town.
-                    Where parents oftenly work in poorly paid jobs which bring instability in their homes and wellbeing.
-                    And while they are faced many spiritual, emotional and financial problems they have to raise and teach their chilren. Poverty stricken and faced with obstacles around home and in the community trying their best to keep up to day to day challenges.
-                </p>
+
+          <div class="ulwazi-profile" id="founder">
+              <h2 class="profile section-subtitle">About Me</h2>
+            <div class="profile-content">
+                <div class="wrapp">
+                    <img class="display-img" src="images/lush.jpg" alt="woman standing">
+                    <h4>Lumka Johannes</h4>
+                    <p>Lumka Johannes grew up in Townships, in the most poorest South-African communities around Eastern Cape and Cape Town.
+                        Where parents oftenly work in poorly paid jobs which bring instability in their homes and wellbeing.
+                        And while they are faced many spiritual, emotional and financial problems they have to raise and teach their chilren. Poverty stricken and faced with obstacles around home and in the community trying their best to keep up to day to day challenges.
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- Background section -->
-        <!-- End of What we do section -->           
+          <!-- Swiper JS -->
         </section>
-        <!-- End of Services section -->
-        </section>
-        <footer id="footer">
-            <div class="main-content">
-                <div class="left box">
-                    <h2>Ulwazi Learning development</h2>
-                    <div class="items">                        
-                    <img src="img/LOGO.png" alt="logo"> 
+        
+                <!-- ------- SPONSOR SECTION ----------- -->
+
+                <section class="testimonial section">
+                    <h2 class="section_title">Sponsors</h2>
+                    <div class="testimonial_container container testimonial_swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial_content swiper-slide">
+                                <div class="testimonial_data">
+                                    <div class="testimonial_header">
+                                        <img src="images/Nicky Davies.jpg" alt=" person display avatar " class="testimonial_img">
+
+                                        <div>
+                                            <h3 class="testimonial_name">Nicky Davies</h3>
+                                            <span class="testimonial_client">Chief Empowering Officer & Personal Change Catalyst for Towards Health INTERNATIONAL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="testimonial_description">For now what keeps me going is this worthy cause – ULWAZI </p>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial_content swiper-slide">
+                                <div class="testimonial_data">
+                                    <div class="testimonial_header">
+                                        <img src="images/yonelajohannes.png" alt=" person display avatar " class="testimonial_img">
+
+                                        <div>
+                                            <h3 class="testimonial_name">Yonela Johannes</h3>
+                                            <span class="testimonial_client">FrontEnd Web Engineer</span>
+                                        </div>
+                                    </div>
+                                    <!-- <div>
+                                        <i class="far fa-star testimonial_icon"></i>
+                                        <i class="far fa-star testimonial_icon"></i>
+                                        <i class="far fa-star testimonial_icon"></i>
+                                        <i class="far fa-star testimonial_icon"></i>
+                                        <i class="far fa-star testimonial_icon"></i>
+                                    </div> -->
+                                </div>
+                                <p class="testimonial_description">I'm passionate about volunteering my time & talents to Ulwazi, and I'm very proud to serve.
+                                </p>
+                            </div>
+                        </div>                       
                     </div>
-                </div>            
+                </section>
+        <!-- CONTACT SECTION -->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact_container bd-grid">
+                <div class="contact_data">
+                    <h2 class="contact-subtitle section-subtitle">Contact us</h2>
+                </div>
+                <div class="contact_button">
+                </div>
+                <form action="https://formsubmit.co/Lumka.johannes@ulwazilearningdevelopment.com" enctype="multipart/form-data"  method="POST" class="contact_form container grid">
+                    <div class="content_input grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input" required>
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input" required>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <a href="" class="button button--flex">Send Message
+                            <i class="far fa-paper-plane button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="address">
+                    <div class="address_links">
+                        <i class="fas fa-city address_icon">Mfuleni - Cape Town</i>
+                        <!-- <i class="fas fa-phone address_icon">Phone nr</i> -->
+                        <i class="fas fa-at address_icon">Lumka.johannes@ulwazilearningdevelopment.com</i>
+                    </div>
+                </div>
             </div>
-        </footer>
-        <script src="js/app.js"></script>
-        <script src="js/all.js"></script>
-        <script src="https://kit.fontawesome.com/40d983fc97.js" crossorigin="anonymous"></script>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" 
-              src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
-                   &version={graph-api-version}
-                   &appId={your-facebook-app-id}
-                   &autoLogAppEvents=1" 
-              nonce="FOKrbAYI">
-        </script>
-    </body>
+        </section>
+    </main>
+      <!-- ====== FOOTER ======= -->
+    <footer class="footer section bd-container" id="footer">
+        <div class="footer_container bd-container">
+            <div class="footer_content">
+                <a href="#" class="footer_logo">Ulwazi Learning Development</a>
+                <div>
+                    <a href="#" class="footer_social"><i class="fab fa-facebook-square"></i></a>
+                </div>
+        </div>
+        <p class="footer_copy">&#169; 2021 Yonela Johannes. All rights reserved</p>
+    </footer>
+        <!-- Swiper Js -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/40d983fc97.js" crossorigin="anonymous"></script>       
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
