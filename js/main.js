@@ -164,7 +164,7 @@ let swiper = new Swiper(".mySwiper", {
 // ============= Testimonials Swiper
 
 let testimonial = new Swiper(".testimonial_swiper", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     centeredSlides: true,
     loop: true,
     autoplay:  {

@@ -397,16 +397,16 @@ nav{
 /* Home page */
 
 .home{
-    width: 80%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     height: calc(100vh - var(--header-container));
-    border-radius: 0 100% 100% 0;
+    /* border-radius: 0 100% 100% 0; */
     align-items: center;
     background-color: var(--primary-background-color);
 }
-.home_data{
+/* .home_data{
     margin-left: 1.2em;
-}
+} */
 
 .home_title{
     font-size: var(--biggest-font-size);
@@ -634,8 +634,11 @@ img.about_img{
 
 /* ======MEDIA QUERIES===== */
 /* small devices */
-@media screen and (min-width: 576px) {
-
+@media screen and (min-width: 800px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
     .about_data, .about_initial,
     .contact_container, .contact_initial{
         text-align: initial;
