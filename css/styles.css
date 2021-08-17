@@ -8,7 +8,7 @@
         --header-light: #3rem;
         --header-color:#d1b867;
         /* COLORS */
-        --main-bg-color :#48636e;
+        --main-bg-color :#d1b867;
         --primary-header-color: #000000;
         --primary-color: #069C54;
         --primary-color-alt: #037046;
@@ -49,7 +49,7 @@
         --z-fixed: 100;
 }
 
-@media screen and(min-width: 768px){
+/* @media screen and(min-width: 768px){
     :root{
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
@@ -59,7 +59,7 @@
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
-}
+} */
 
 /* ======= BASE ======= */
 
@@ -150,7 +150,7 @@ nav{
 }
 /* small devices */
 
-@media screen and (max-width: 968px){
+/* @media screen and (max-width: 968px){
     .nav_menu{
         position: fixed;
         top: -100%;
@@ -183,7 +183,7 @@ nav{
 .nav_close:hover{
     color: var(--primary-background-color);
 }
-}
+} */
 
 .nav_list{
     grid-template-columns: repeat(3, 1fr);
@@ -316,37 +316,7 @@ nav{
 .active, .dot{
     border-color: var(--primary-color);
 }
-/* .fade{
-    -webkit-animation: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
-@webkit-keyframes fade{
-    from {opacity: 0.8}
-    to {opacity: 1}
-}
-
-@keyframes fade{
-    from {opacity: 0.8}
-    to {opacity: 1}
-} */
-
-/* img{
-    transition: scale(1.5, 1.5);
-    animation-name: zoomin;
-    animation-duration: 40s;
-}
-@webkit-keyframes zoomin{
-    from{transform: scale(1, 1);}
-    to{transform: scale(1.5, 1.5);}   
-}
-
-@keyframes zoomin{
-    from{transform: scale(1, 1);}
-    to{transform :scale(1.5, 1.5);}
-} */
 
 .txt{
     position: absolute;
@@ -358,7 +328,7 @@ nav{
     z-index: 1;
 }
 
-@media screen and(max-width: 968px){
+/* @media screen and(max-width: 968px){
     .home{
         flex-direction: column;
     }
@@ -382,8 +352,8 @@ nav{
     .sign a{
         font-size: 1px;
     }
-}
-@media screen and (max-width: 520px){
+} */
+/* @media screen and (max-width: 520px){
     .txt h1{
         font-size: 30px;
     }
@@ -393,13 +363,13 @@ nav{
     .sign a{
         font-size: 12px;
     }
-}
+} */
 /* Home page */
 
 .home{
-    width: 100%;
-    padding: 10px;
-    height: calc(100vh - var(--header-container));
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* height: calc(100vh - var(--header-container)); */
     /* border-radius: 0 100% 100% 0; */
     align-items: center;
     background-color: var(--primary-background-color);
@@ -411,13 +381,11 @@ nav{
 .home_title{
     font-size: var(--biggest-font-size);
     color: var(--primary-color);
-    margin-bottom: var(--mb-1);
 }
 
 .home_subtitle{
     font-size: var(--h1-font-size);
     color: var(--title-color);
-    margin-bottom: var(--mb-2);
 }
 
 .button{
@@ -686,7 +654,7 @@ img.about_img{
     display: none;
 }
     .home_container{
-        height: 100vh;
+        height: 30vh;
         justify-items: center;
     }
     .services_container, 
@@ -706,13 +674,12 @@ img.about_img{
         width: 100%;
     }
 
-    .swiper-wrapper{
-        width: 50%;
-    }
-
     .about_container{
         width: 50%;
         margin: 0 auto;
+        background-color: var(--main-bg-color);
+        padding: 10px;
+        border-radius: 15px;
     }
     .ulwazi-profile{
         width: 50%;
@@ -850,10 +817,10 @@ img.about_img{
   .swiper-slide{
       width: 70%;
   }
-  .image-slide{
+  /* .image-slide{
     display: block;
     width: 200px;
-  }
+  } */
 
   .home{
     display: flex;
@@ -869,15 +836,15 @@ img.about_img{
     background-color: transparent;
   }
 
-  .image-slide{
+  /* .image-slide{
       width: 100%;
     height: 50%;
-  }
+  } */
 
   .home-swiper{
-      margin-top: 10rem;
-      margin-bottom: 7rem;
-      width: 70%;
+      /* margin-top: 10rem; */
+      /* margin-bottom: 7rem; */
+      /* width: 70%; */
       height: 50%;
       overflow: hidden;
   }
@@ -923,18 +890,19 @@ img.about_img{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10rem;
-        margin-bottom: 7rem;
-        width: 80%;
-        height: 50%;
+
+        width: 40%;
+        border-radius: 15px;
         overflow: hidden;
         background-color: var(--primary-color);
     }
 
     .swiper-wrapper{
-        margin: 0 auto;
         width: 50%;
         height: 30%;
+    }
+    .swiper-slide > img {
+        width: 500px;
     }
     
   }
