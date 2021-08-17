@@ -49,7 +49,7 @@
         --z-fixed: 100;
 }
 
-/* @media screen and(min-width: 768px){
+@media screen and(min-width: 768px){
     :root{
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
@@ -59,7 +59,7 @@
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
-} */
+}
 
 /* ======= BASE ======= */
 
@@ -150,7 +150,7 @@ nav{
 }
 /* small devices */
 
-/* @media screen and (max-width: 968px){
+@media screen and (max-width: 968px){
     .nav_menu{
         position: fixed;
         top: -100%;
@@ -183,7 +183,7 @@ nav{
 .nav_close:hover{
     color: var(--primary-background-color);
 }
-} */
+}
 
 .nav_list{
     grid-template-columns: repeat(3, 1fr);
@@ -328,7 +328,7 @@ nav{
     z-index: 1;
 }
 
-/* @media screen and(max-width: 968px){
+@media screen and(max-width: 968px){
     .home{
         flex-direction: column;
     }
@@ -352,8 +352,8 @@ nav{
     .sign a{
         font-size: 1px;
     }
-} */
-/* @media screen and (max-width: 520px){
+} 
+@media screen and (max-width: 520px){
     .txt h1{
         font-size: 30px;
     }
@@ -363,7 +363,7 @@ nav{
     .sign a{
         font-size: 12px;
     }
-} */
+}
 /* Home page */
 
 .home{
@@ -436,7 +436,6 @@ img.about_img{
     width: 70%;
 }
 .about-swiper{
-    padding: 2rem;
     border-radius: 3px;    
 }
 
@@ -691,6 +690,8 @@ img.about_img{
         overflow: hidden;
     }
     .testimonial_container{
+        display: flex;
+        flex-direction: column;
         width: 50%;
     }
     .address{
@@ -738,19 +739,14 @@ img.about_img{
     .goals{
         display: flex;
         flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        background-color: transparent;
+        border: none;
         border-top: 15px;
-        background-color: var(--header-color);
-        border: 1px solid rgb(63, 62, 62);
-        border-radius: 15px;
         align-items: center;
         justify-content: center;
     }
-    .left{
-        margin: 20px auto;
-    }
-    .address_links{
+      .address_links{
         display: flex;
         flex-direction: column;
     }
@@ -771,7 +767,6 @@ img.about_img{
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    padding: 2rem;
 }
 .testimonial_data{
     justify-content: space-between;
@@ -805,6 +800,7 @@ img.about_img{
 .swiper-container {
     width: 100%;
     padding: 50px;
+    margin-top: 50px;
   }
   
   .swiper-slide {

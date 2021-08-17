@@ -163,13 +163,13 @@ let swiper = new Swiper(".mySwiper", {
 
 // ============= Testimonials Swiper
 
-let testimonial = new Swiper(".testimonial_swiper", {
-    slidesPerView: 2,
-    centeredSlides: true,
-    loop: true,
-    autoplay:  {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-  });
+// let testimonial = new Swiper(".testimonial_swiper", {
+//     slidesPerView: 2,
+//     centeredSlides: true,
+//     loop: true,
+//     autoplay:  {
+//         delay: 4000,
+//         disableOnInteraction: false,
+//     },
+//   });
 
