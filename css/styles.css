@@ -193,7 +193,11 @@ nav{
 
 .nav_item{
     margin-bottom: var(--mb-2);
-    color: white;
+    padding : 15px;
+}
+.nav_item:hover{
+    border: 1px solid gray;
+    border-radius: 15px;
 }
 
 .nav_link, .nav_logo, .nav_toggle{
