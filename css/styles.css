@@ -204,6 +204,9 @@ nav{
 .nav_logo:hover{
     color: var(--primary-color);
 }
+.nav_icon:hover{
+    color: var(--primary-color);
+}
 
 .nav_link{
     color: var(--primary-header-color);
