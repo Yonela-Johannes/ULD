@@ -188,11 +188,11 @@ nav{
 .nav_list{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    color: wh
 }
 
 .nav_item{
     margin-bottom: var(--mb-2);
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,8 +211,6 @@ nav{
 >>>>>>> parent of 9b31915 (Update styles.css)
 =======
 >>>>>>> parent of 725c6d5 (header)
-=======
->>>>>>> parent of d0f62e8 (header update)
 }
 
 .nav_link, .nav_logo, .nav_toggle{
@@ -269,6 +267,7 @@ nav{
 
 .nav_icon{
     font-size: 1.3rem;
+    color: rgb(98, 98, 98);
 }
 /* change background header*/
 
@@ -665,6 +664,7 @@ img.about_img{
     .nav_item{
         margin-left: var(--mb-5);
         margin-bottom: 0;
+        color: white;
     }
     .nav_toggle{
         display: none;
@@ -979,4 +979,8 @@ img.about_img{
     background-color:var(--contact-bg);
     align-items: center;
     font-size: 1.3rem;
+}
+
+a.nav_link{
+    color: rgb(98, 98, 98);
 }
