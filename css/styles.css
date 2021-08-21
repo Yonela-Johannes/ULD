@@ -192,6 +192,10 @@ nav{
 
 .nav_item{
     margin-bottom: var(--mb-2);
+<<<<<<< HEAD
+=======
+    color: white;
+>>>>>>> parent of 9b31915 (Update styles.css)
 }
 
 .nav_link, .nav_logo, .nav_toggle{
