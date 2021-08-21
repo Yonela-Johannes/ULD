@@ -193,6 +193,7 @@ nav{
 .nav_item{
     margin-bottom: var(--mb-2);
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding : 15px;
 }
 .nav_item:hover{
@@ -200,6 +201,9 @@ nav{
     border-radius: 15px;
 =======
 >>>>>>> parent of d0f62e8 (header update)
+=======
+    color: white;
+>>>>>>> parent of 9b31915 (Update styles.css)
 }
 
 .nav_link, .nav_logo, .nav_toggle{
