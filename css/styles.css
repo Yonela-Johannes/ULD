@@ -960,3 +960,8 @@ img.about_img{
     align-items: center;
     font-size: 1.3rem;
 }
+
+#form_submit_button{
+    border: none;
+    outline: none;
+}

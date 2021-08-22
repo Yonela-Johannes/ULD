@@ -224,26 +224,27 @@
                 </div>
                 <div class="contact_button">
                 </div>
-                <form action="https://formsubmit.co/Lumka.johannes@ulwazilearningdevelopment.com" enctype="multipart/form-data"  method="POST" class="contact_form container grid">
+                <form action="https://formsubmit.co/Lumka.johannes@ulwazilearningdevelopment.com" method="POST" class="contact_form container grid">
                     <div class="content_input grid">
                         <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
+                            <label for="name" class="contact_label">Name</label>
                             <input type="text" class="contact_input" required>
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
+                            <label for="email" class="contact_label">Email</label>
                             <input type="email" class="contact_input" required>
+                            <input type="hidden" name="_cc" value="johannesyonela.com">
+                            <input type="hidden" name="_next" value="https://ulwazilearningdevelopment.com./thanks.html">
                         </div>
                     </div>
                     <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
-                    <div>
-                        <a href="" class="button button--flex">Send Message
-                            <i class="far fa-paper-plane button_icon"></i>
-                        </a>
-                    </div>
+                    <button class="button button--flex" type="submit" id="form_submit_button">
+                        Send Message
+                            <i class="far fa-paper-plane button_icon"></i>                       
+                    </button>
                 </form>
                 <div class="address">
                     <div class="address_links">
