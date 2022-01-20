@@ -1,28 +1,28 @@
 // // ========================= SHOW MENU =================
-    const navMenu = document.getElementById('nav-menu')
-    const navToggle = document.getElementById('nav-toggle')
-    const navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu')
+const navToggle = document.getElementById('nav-toggle')
+const navClose = document.getElementById('nav-close')
 
-    const navLink = document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll('.nav_link')
 
-    if(navToggle){
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
-            console.log("You have clicked me")
-        })
-    }
-    if(navClose){
-        navClose.addEventListener('click', () => {
-            navMenu.classList.remove('show-menu')
-        })
-    }
-
-    function linkAction(){
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+        console.log("You have clicked me")
+    })
+}
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
-    }
+    })
+}
+
+function linkAction() {
+    navMenu.classList.remove('show-menu')
+}
 navLink.forEach(n => n.addEventListener('click', linkAction))
-// // ======================== REMOVE MENU MOBILE
-// const navLink = document.querySelector('.nav-menu');
+    // // ======================== REMOVE MENU MOBILE
+    // const navLink = document.querySelector('.nav-menu');
 
 // function linkAction(){
 //     const navMenu = document.getElementById('nav-menu')
@@ -128,16 +128,14 @@ let homeSwiper = new Swiper('.home-swiper', {
     effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
-    spaceBetween: 10,
     coverflowEffect: {
-        stretch: 0,
-        depth: 100,
+        depth: 50,
         slideShadow: true,
-  
+
     },
     loop: true,
-    autoplay:  {
-        delay: 2000,
+    autoplay: {
+        delay: 1000,
         disableOnInteraction: false,
     },
 
@@ -155,11 +153,11 @@ let swiper = new Swiper(".mySwiper", {
         modifer: 1,
     },
     loop: true,
-    autoplay:  {
+    autoplay: {
         delay: 2000,
         disableOnInteraction: false,
     },
-  });
+});
 
 // ============= Testimonials Swiper
 
@@ -172,4 +170,3 @@ let swiper = new Swiper(".mySwiper", {
 //         disableOnInteraction: false,
 //     },
 //   });
-
